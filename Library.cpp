@@ -49,6 +49,10 @@ class Lib
 //        functions of Lib Class
 //****************************************************************
 
+//***************************************************************
+//        functions to get data about the book and purchase.
+//****************************************************************
+
 void Lib::getdata()
 {
                     int i;
@@ -72,6 +76,11 @@ void Lib::getdata()
                     cout<<"\n\t\tEnter Book's Quantity : ";
                     cin>>q;
 }
+
+//***************************************************************
+//        functions to Show the Data Related to the book
+//****************************************************************
+
 void Lib::show(int i)
 {
     cout<<"\n\t\tBook Name : "<<bookname<<endl;
@@ -84,6 +93,10 @@ void Lib::show(int i)
         cout<<"\n\t\tBook's Quantity : "<<q<<endl;
     }
 }
+
+//***************************************************************
+//        functions to get list of Books in Library.
+//****************************************************************
   void Lib::booklist(int i)
   {
                 int b,r=0;
