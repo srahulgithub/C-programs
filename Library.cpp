@@ -372,7 +372,7 @@ void Lib::show(int i)
   {
       int i;
       cout<<"\n\t\t>>Please Choose one Branch :-\n";
-      cout<<"\n\t\t1.BIT\n\n\t\t2.EE\n\n\t\t3.EC\n\n\t\t4.CIVIL\n\n\t\t5.MECHANICAL\n\n\t\t6.1ST YEAR\n\n\t\t7.Go to menu\n";
+      cout<<"\n\t\t1.BT\n\n\t\t2.EE\n\n\t\t3.EC\n\n\t\t4.CIVIL\n\n\t\t5.MECHANICAL\n\n\t\t6.1ST YEAR\n\n\t\t7.Go to menu\n";
       cout<<"\n\t\tEnter youur choice : ";
       cin>>i;
       switch(i)
