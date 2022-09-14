@@ -372,7 +372,7 @@ void Lib::show(int i)
   {
       int i;
       cout<<"\n\t\t>>Please Choose one Branch :-\n";
-      cout<<"\n\t\t1.BT\n\n\t\t2.EE\n\n\t\t3.EC\n\n\t\t4.CIVIL\n\n\t\t5.MECHANICAL\n\n\t\t6.1ST YEAR\n\n\t\t7.Go to menu\n";
+      cout<<"\n\t\t1.BT(101)\n\n\t\t2.EE(102)\n\n\t\t3.EC(103)\n\n\t\t4.CIVIL(104)\n\n\t\t5.MECHANICAL(105)\n\n\t\t6.COMPUTER SCIENCE(106)\n\n\t\t7.Go to menu\n";
       cout<<"\n\t\tEnter youur choice : ";
       cin>>i;
       switch(i)
@@ -695,7 +695,7 @@ void Lib::fine(int d,int m,int y,int dd,int mm,int yy)
     n2=n1-15;
     if(n2>0)
     cout<<"\n\t\tThe Total Fine is : "<<n2;
-    
+
 }
 void Lib::der(char st[],int b,int x)
 {
@@ -736,7 +736,7 @@ void Lib::der(char st[],int b,int x)
 void Lib::get()
 {
    int i;
-        cout<<"\n\t*********** LIBRARY MANAGEMENT SYSTEM ***********\n"<<"\n\t\t\t    L M S (C++)\n";
+        cout<<"\n\t*********** LIBRARY MANAGEMENT SYSTEM ***********\n"<<"\n\t\t\t    L M S (C++) \n";
         cout<<"\n\t\t>>Please Choose Any Option To login \n";
         cout<<"\n\t\t1.Student\n\n\t\t2.Librarian\n\n\t\t3.Close Application\n";
         cout<<"\n\t\tEnter your choice : ";
@@ -966,4 +966,3 @@ int main()
     getch();
     return 0;
 }
-
