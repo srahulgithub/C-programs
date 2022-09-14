@@ -136,6 +136,10 @@ void Lib::show(int i)
                 else
                     librarian();
     }
+
+//***************************************************************
+//        functions to modify the books (adding/deleting)
+//****************************************************************
   void Lib::modify()
   {
     char ch,st1[100];
@@ -360,6 +364,10 @@ void Lib::show(int i)
     librarian();
 
   }
+
+//***************************************************************
+//        functions To get book according to intrest and branch.
+//****************************************************************
   int Lib::branch(int x)
   {
       int i;
@@ -392,6 +400,10 @@ void Lib::show(int i)
                     branch(x);
         }
   }
+
+//***************************************************************
+//        functions to search book
+//****************************************************************
   void Lib::see(int x)
   {
       int i,b,cont=0;
@@ -477,6 +489,10 @@ void Lib::show(int i)
 
 
   }
+
+//***************************************************************
+//        functions to issue book
+//****************************************************************
 void Lib::issue()
 {
     char st[50],st1[20];
@@ -650,6 +666,10 @@ void Lib::issue()
     system("cls");
     librarian();
 }
+
+//***************************************************************
+//        functions for fine
+//****************************************************************
 void Lib::fine(int d,int m,int y,int dd,int mm,int yy)
 {
     long int n1,n2;
@@ -739,6 +759,10 @@ void Lib::get()
            get();
         }
 }
+
+//***************************************************************
+//        functions for student
+//****************************************************************
 void Lib::student()
 {
     int i;
@@ -808,6 +832,10 @@ void Lib::pass()
         get();
     }
 }
+
+//***************************************************************
+//        functions for librarian
+//****************************************************************
 void Lib::librarian()
 {
     int i;
@@ -939,74 +967,6 @@ int main()
     return 0;
 }
 
-
-class student
-{
-    char admno[6];
-    char name[20];
-    char stbno[6];
-    int token;
-public:
-    void create_student()
-    {
-        clrscr();
-         cout<<"\nNEW STUDENT ENTRY...\n";
-        cout<<"\nEnter The admission no. ";
-        cin>>admno;
-        cout<<"\n\nEnter The Name of The Student ";
-        gets(name);
-        token=0;
-        stbno[0]='/0';
-        cout<<"\n\nStudent Record Created..";
-    }
-
-    void show_student()
-    {
-        cout<<"\nAdmission no. : "<<admno;
-        cout<<"\nStudent Name : ";
-        puts(name);
-        cout<<"\nNo of Book issued : "<<token;
-        if(token==1)
-            cout<<"\nBook No "<<stbno;
-    }
-
-    void modify_student()
-    {
-        cout<<"\nAdmission no. : "<<admno;
-        cout<<"\nModify Student Name : ";
-        gets(name);
-    }
-
-    char* retadmno()
-    {
-        return admno;
-    }
-
-    char* retstbno()
-    {
-        return stbno;
-    }
-
-    int rettoken()
-    {
-        return token;
-    }
-
-    void addtoken()
-    {token=1;}
-
-    void resettoken()
-    {token=0;}
-
-    void getstbno(char t[])
-    {
-        strcpy(stbno,t);
-    }
-
-    void report()
-    {cout<<"\t"<<admno<<setw(20)<<name<<setw(10)<<token<<endl;}
-
-};         //class ends here
 
 
 
